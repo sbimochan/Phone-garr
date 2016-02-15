@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html ng-app="ionicApp">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+    <title>Routine</title>
+    <link href="../../css/ionic.css" rel="stylesheet">
+    <link href="../../css/animate.css" rel="stylesheet" />
+    <link href="../../css/gradient.css" rel="stylesheet" />
+    <style>
+       
+   .button-light{margin-left:45%;}
+    </style>
+</head>
+<body ng-Controller="MainCtrl" >
+    <ion-nav-view>
+        <div class="bar bar-header bar-light">
+            <h1 class="title animated SlideInDown">Routine</h1>
+        </div>
+        <br /><br />
+        <h1>What's today's routine?</h1>
+
+        <button onclick="routineFunction()" class="button button-light">Show</button>
+
+        <p id="Routine"></p>
+        <!--footer-->
+        <ion-footer-bar class="bar-stable tabs tabs-icon-only" style="position:fixed;">
+            <a class="tab-item" ui-sref="home" href="../../index.html">
+                <i class="icon ion-home"></i>
+            </a>
+            <a class="tab-item" ui-sref="favorite" href="about.html">
+                <i class="icon ion-person"></i>
+            </a>
+            <a class="tab-item" ui-sref="setting" href="#">
+                <i class="icon ion-clock"></i>
+            </a>
+        </ion-footer-bar>
+        <ion-nav-view></ion-nav-view>
+
+        <script src="../../js/routineFunction.js"></script>
+    </ion-nav-view>
+</body>
+</html>
+
+
