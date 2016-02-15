@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+    <title>Routine</title>
+    <link href="../../css/ionic.css" rel="stylesheet">
+   <link href="../../css/angular-chart.min.css" rel="stylesheet" />
+    <link href="../../css/style.css" rel="stylesheet" />
+    <link href="../../css/animate.css" rel="stylesheet" />
+</head>
+<body ng-app="starter">
+    <ion-nav-view>
+        <ion-header-bar class="bar bar-header bar-Positive" style="position:fixed;">
+            <h1 class="title  animated SlideInDown">About</h1>
+
+        </ion-header-bar>
+        <ion-pane>
+            <ion-content ng-controller="ExampleController">
+                <div class="card">
+                    <div class="item item-divider">
+                        Contacts of boys, girls and teachers
+                    </div>
+                    <div class="item item-text-wrap">
+
+                        <canvas id="doughnut" class="chart chart-doughnut" chart-data="data" chart-labels="labels" chart-legend="true" chart-options="{showTooltips: false}"></canvas>
+                    </div>
+                </div>
+                <div>
+                    <h4>
+                        Fast and secure face recognition.
+                        No need to remember and ask out for numbers.
+                        Daily routine of respective classes.
+                        <p>Everything Offline</p>
+                        <p>
+                            Developed by<b> Bimochan Shrestha CSIT/070 HCOE</b>
+                        </p>
+                    </h4>
+                </div>
+            </ion-content>
+        </ion-pane>
+        <!--footer-->
+        <ion-footer-bar class="bar-stable tabs tabs-icon-only" style="position:fixed;">
+            <a class="tab-item" href="../../index.html">
+                <i class="icon ion-home"></i>
+            </a>
+            <a class="tab-item" href="#">
+                <i class="icon ion-person"></i>
+            </a>
+            <a class="tab-item" href="routine.html">
+                <i class="icon ion-clock"></i>
+            </a>
+        </ion-footer-bar>
+    </ion-nav-view>
+    <script src="../../js/ionic.bundle.min.js"></script>
+    <script src="../../js/ng-cordova.min.js"></script>
+    <script src="../../js/Chart.min.js"></script>
+
+    <script src="../../js/app.js"></script>
+    <script src="../../js/angular-chart.js"></script>    
+</body>
+
+</html>
+
+
