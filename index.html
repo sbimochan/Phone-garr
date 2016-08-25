@@ -257,6 +257,27 @@
     </ion-nav-view>
     <ion-spinner class="lines-energized"></ion-spinner>
     <script src="js/cordova.js"></script>
-    <script src="js/controllers.js"></script>       
+    <script src="js/controllers.js"></script>      
+    <script src="js/jquery.nicescroll.min.js"></script>
+     <script type="text/javascript">
+    $(document).ready(function(){
+        
+        if ($.fn.appear){
+          $('[data-ride="animated"]').appear();
+          if( !$('html').hasClass('ie no-ie10') ) {       
+              $('[data-ride="animated"]').addClass('appear');
+              $('[data-ride="animated"]').on('appear', function() {
+                  var $el = $(this), $ani = ($el.data('animation') || 'fadeIn'), $delay;
+                  if ( !$el.hasClass('animated') ) {  
+                      $delay = $el.data('delay') || 0;
+                      setTimeout(function(){
+                          $el.removeClass('appear').addClass( $ani + " animated" );
+                      }, $delay);
+                  }
+              });
+          };
+      }
+    });
+</script>
 </body>
 </html>
